@@ -52,13 +52,6 @@ class BoardMapperTest {
                 .extracting("title", "content")
                 .containsExactly(boardQnaWriteDTO.getTitle(), boardQnaWriteDTO.getContent());
     }
-
-    @Test
-    void selectQuestionList() {
-        List<BoardQnaListDTO> boardQnaListDTO = boardMapper.selectQuestionList();
-
-        System.out.println("boardQnaListDTO = " + boardQnaListDTO);
-    }
 }
 
 
